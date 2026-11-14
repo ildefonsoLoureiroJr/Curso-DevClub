@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    border:1px solid #ff0000;
+    color: blue;
+}
+
+input::placeholder {
+    color: #ff1396;
+}
+
+p::first-letter {
+    color: #ff0000;
+}
+
+a {
+    color: blue;
+}
+
+a::before {
+    content: "->";
+}
+
+a::after {
+    content: "<-";
+}

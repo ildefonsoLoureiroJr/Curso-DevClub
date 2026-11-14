@@ -1,0 +1,137 @@
+/* 
+
+========================== CORES =========================
+
+    RGB: Red, Green, Blue
+
+    HEXADECIMAL
+
+    DECIMAL(10) => 0,1,2,3,4,5,6,7,8,9
+    HEXADECIMAL(16) => 0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F
+
+======================== UNIDADES DE MEDIDAS ==========================
+
+-> ABSOLUTAS
+    1 polegada = 2,54cm
+    ==> px (pixels) 1/100 polegada <==
+    in (inches/polegadas) 
+    cm / mm (centímetros / milímetros)
+
+-> RELATIVAS
+    % calcula o tamanho relativo ao elemento pai
+    vw (view width) 1vw é 1% da largura da janela do navevador
+    vh (view height) 1vh é 1% da altura da janela do navegador
+    em é uma unidade relativa ao elemento pai
+    rem é uma unidade relativa ao elemento raiz
+
+=========================== TEXTOS / FONTES =============================
+
+    color: cor do texto
+    font-size: tamanho do texto
+    font-weght: peso do texto ou grossura do texto, se for (bold) será para deixar em negrito
+    font-family: mudar a familia do texto 
+    font-style: estilo da fonte (italico)
+    line-height: espaçamento das linhas da fonte
+    letter-spacing: espaçamento entre as letras
+    word-spacing: espaçamento entre as palavras
+    tex-aligne: alinhamento do texto (center, right, left, justify)
+    text-transform: transofrmar o texto (deixar os textos, todos msiusculos, minusculos etc)
+    text-decoration: decorar textos como (underline, etx)
+    text-shadow: colocar sombra no texto 
+
+=========== PADDING E MARGIN =================
+
+     top  right bottom  left
+        12h  15h  18h  21h
+margin: 10px 50px 30px 5px;
+padding: 10px 50px;
+
+
+
+============= BOX SIZING ==========
+
+
+======= DISPLAY ============
+
+    - BLOCK
+    - INLINE
+    - INLINE-BLOCK
+
+    - GRID
+    - FELX
+
+    BLOCK
+    Vem como padrão: div, section, p, h1, h2, ul, li, article...
+
+        - Ocupa 100% da largura do elemento pai
+        - Sempre ocupa toda a sua linha
+        - ALtura definida de acordo com o conteúdo
+        - Podemos definir height e width
+        - Podemos definir valores de margin
+
+    - INLINE
+        Vem como padrão a, span, b, i ...
+
+        - Elementos em linha
+        - Não permite alterar height e width
+        - Não podeos definir valores de margin top e bottom
+        - Ganha comportamento de uma palavra
+    
+    -INLINE-BLOCK
+        - Elementos em linha, porém com característica do display Block 
+        - Altura e largura podem se alterados
+
+*/
+ 
+*{
+    box-sizing: border-box;
+    padding: 0;
+
+}
+
+#titulo {
+    color: rgba(42, 201, 166, 0.425);
+    font-size: 55px;
+}
+
+#paragrafo {
+    color: rgb(91, 34, 184);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.botao {
+    background: rgba(231, 184, 65, 0.616);
+    border-color: rgb(165, 101, 5);
+}
+
+.avo {
+    font-size: 16px;
+}
+
+.pai {
+    width: 50vw;
+    height: 50vh;
+    background: blue;
+    font-size: 2em;
+}
+
+.filho{
+    width: 50%;
+    height: 50%;
+    background: red;
+    font-size: 2em;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    background-color: #FF1493;
+
+    /*      top  right bottom  left*/
+    /*       12h  15h  18h  21h*/
+    margin: 10px 50px 30px 5px;
+
+    padding: 10px 50px;
+
+}
